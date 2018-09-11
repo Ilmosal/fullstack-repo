@@ -1,0 +1,20 @@
+Kayttaja -> selain:
+note left of selain
+kayttaja kirjotitaa selaimeen
+https://fullstack-exampleapp.herokuapp.com/notes
+end note
+selain -> palvelin: GET https://fullstack-exampleapp.herokuapp.com/notes
+note left of palvelin
+Muodostetaan html dokumentti palvelimella
+end note
+palvelin->selain: status 200 html koodi
+selain -> palvelin: GET https://fullstack-exampleapp.herokuapp.com/main.js
+palvelin->selain: status 200  main.js javascript
+selain -> palvelin: GET https://fullstack-exampleapp.herokuapp.com/main.css
+palvelin->selain: status 200  main.css css tiedosto
+selain -> palvelin: GET https://fullstack-exampleapp.herokuapp.com/data.json
+palvelin->selain: status 200  data.json data homma
+note left of selain
+Selain antaa käyttäjälle generoidun html dokumentin.
+end note
+

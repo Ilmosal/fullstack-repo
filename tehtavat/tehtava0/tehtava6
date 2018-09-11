@@ -1,0 +1,12 @@
+Kayttaja -> selain:
+kayttaja kirjoittaa nootin ja tallettaa sen
+end note
+selain -> palvelin: post https://fullstack-exampleapp.herokuapp.com/new_note_spa
+note left of palvelin
+talletetaan note palvelimelle
+end note
+palvelin->selain: status 201 html koodi
+note left of selain
+Selain päivittää html dokumenttia
+end note
+
